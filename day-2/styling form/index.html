@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling a form</title>
+    <style>
+      body {
+        background: radial-gradient(circle, rgb(196, 196, 207), red 100%);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .formdiv {
+        background: whitesmoke;
+        padding: 10px;
+        border-radius: 10px;
+        width: 350px;
+      }
+      .wid{
+        width: 97%;
+        padding: 5px;
+        border-radius: 5px;
+        /* height: 20px; */
+        outline: 1px solid rgb(255, 255, 255);
+        border: 1px solid rgb(224, 224, 224);
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="">
+        <h2 style="text-align: center;">Feedback Form:</h2>
+        <div class="formdiv">
+          <span>Feedback Type</span><br />
+          <select style="border: 1px solid rgb(224, 224, 224);width: 100%; padding: 5px;margin-bottom: 10px;background: white;" name="" id="">
+            <option value="">Compliment</option>
+            <option value="">Query</option>
+            <option value="">Suggestion</option>
+          </select> 
+          <span>Message:</span><br>
+          <textarea style="margin-right: 5px;" class="wid" rows="4" id=""></textarea>
+          <div style="margin-top: 10px;margin-left: 15px;margin-bottom: 10px;">
+            <span>Website Rating</span><br>
+            <input type="radio" name="" id="">Excellent<input type="radio" name="" id="">Good<input type="radio" name="" id="">Average<input type="radio" name="" id="">Poor
+          </div>
+<span>Age (10-100):</span><br>
+<input style="margin-bottom: 10px;" type="number" name="" min="10" max="100" class="wid"><br>
+<span>Email<span style="color: red;">*</span>:</span><br>
+<input style="margin-bottom: 10px;" type="email" class="wid" name="" id=""><br>
+
+<span>Password (min.8 characters):</span><br>
+<input style="margin-bottom: 10px;" type="password" class="wid" name="" id=""><br>
+<span>Website URL (optional):</span><br>
+<input type="url" class="wid" name="" id=""><br>
+
+<div style="margin-top: 10px;">
+    <input type="checkbox" name="" id="">
+    <span> I agree to the terms and conditions</span>
+</div>
+<div style="margin-top: 5px; text-align: center;">
+    <input style="color: white;background: rgb(6, 163, 6);border-radius: 5px;padding: 7px 15px;font-weight: bold;" type="button" value="Submit">
+</div>
+
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

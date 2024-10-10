@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling a Table</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            margin-top: 20%;
+        }
+        td, th {
+            /* outline: 0.1px solid black; */
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 4px;
+            width: 1500px;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <table style="border-collapse: collapse;width: 100%;outline: 1px solid black;">
+        <tr style="background: green;">
+            <td>Product Name</td>
+            <td>Quantity</td>
+            <td>Price per Unit</td>
+            <td>Description</td>
+            <td>Total Price</td>
+        </tr>
+        <tr style="outline: 1px solid rgb(141, 140, 140);">
+            <td>Product 1</td>
+            <td style="outline: 1px solid rgb(141, 140, 140);">2</td>
+            <td>$10</td>
+            <td style="outline: 1px solid rgb(141, 140, 140);">This is product 1</td>
+            <td>$20</td>
+        </tr>
+        <tr style="">
+            <td>Product 2</td>
+            <td style="outline: 1px solid rgb(141, 140, 140);">3</td>
+            <td>$20</td>
+            <td style="outline: 1px solid rgb(141, 140, 140);">This is product 2</td>
+            <td>$60</td>
+        </tr>
+        <tr style="background: rgb(187, 185, 185);outline: 1px solid rgb(141, 140, 140);">
+            <td colspan="4">Sum</td>
+            <td style="outline: 1px solid rgb(141, 140, 140);">$80</td>
+        </tr>
+    </table>
+   </div>
+</body>
+</html>
